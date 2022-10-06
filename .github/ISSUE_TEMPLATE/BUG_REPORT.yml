@@ -33,7 +33,8 @@ body:
     attributes:
       label: Images
       description: Please share relevant images or screenshots here
-      placeholder: Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+      placeholder: |
+        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
   - type: textarea
     id: steps-to-reproduce
     attributes:
