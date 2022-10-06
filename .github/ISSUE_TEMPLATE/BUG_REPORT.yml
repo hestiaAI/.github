@@ -43,9 +43,9 @@ body:
   - type: textarea
     id: data
     attributes:
-      label: Data Sources
+      label: "## Data Sources"
       description: |
-        Did you upload any data?
+        Is any data required to reproduce the bug?
         If yes, which data files did you upload?
         Can this bug be reproduced independent of the data source?
         Please do not upload any data files to this form. 
