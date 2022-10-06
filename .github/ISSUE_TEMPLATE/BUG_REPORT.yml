@@ -29,6 +29,12 @@ body:
     validations:
       required: true
   - type: textarea
+    id: images
+    attributes:
+      label: Images
+      description: Please share relevant images or screenshots here
+      placeholder: Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+  - type: textarea
     id: steps-to-reproduce
     attributes:
       label: Steps to Reproduce
@@ -78,7 +84,7 @@ body:
     attributes:
       label: Browser
       description: What browsers are you seeing the problem on?
-      placeholder: Please specify the name and **version**
+      placeholder: Please specify the name and version
     validations:
       required: true
   - type: dropdown
