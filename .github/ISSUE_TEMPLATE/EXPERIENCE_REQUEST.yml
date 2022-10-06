@@ -1,0 +1,36 @@
+name: ⚜️ New Experience Request
+description: File a request for a new data experience
+title: "⚜️ [NEW_EXPERIENCE]: …"
+labels: ["experience"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: input
+    attributes:
+      label: 
+      
+   collaborator?: Collaborator
+  databaseConfig?: DatabaseConfig
+  dataModel?: object
+  dataPortal?: string
+  dataPortalHtml?: string
+  dataPortalMessage?: string
+  dataSamples?: string[]
+  disabled?: boolean
+  files?: Files
+  hideFileExplorer?: boolean
+  hideSummary?: boolean
+  icon?: string
+  keepOnlyFiles?: boolean
+  messages?: Messages
+  preprocessors?: { [key: string]: PreprocessorFunction }
+  subtitle?: string
+  title: string
+  tutorialVideos?: string[]
+  url?: string
+  viewBlocks: ViewBlock[]
