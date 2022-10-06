@@ -70,7 +70,6 @@ body:
         - deployment-example-experiences.netlify.app
         - tfac.hestialabs.org
         - digipower-investigation.org
-        - hestia.ai
         - other
     validations:
       required: true
@@ -80,7 +79,7 @@ body:
       label: Browser
       description: What browsers are you seeing the problem on?
       placeholder: Please specify the name and **version**
-    validation:
+    validations:
       required: true
   - type: dropdown
     id: operating-systems
