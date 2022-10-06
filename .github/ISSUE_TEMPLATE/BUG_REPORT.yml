@@ -43,7 +43,7 @@ body:
   - type: textarea
     id: data
     attributes:
-      label: "## Data Sources"
+      label: Data Sources
       description: |
         Is any data required to reproduce the bug?
         If yes, which data files did you upload?
