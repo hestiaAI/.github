@@ -1,6 +1,6 @@
 name: ⚜️ New Experience Request
 description: File a request for a new data experience
-title: "⚜️ [NEW_EXPERIENCE]: …"
+title: "⚜️ [EXPERIENCE_REQUEST]: …"
 labels: ["experience"]
 body:
   - type: checkboxes
@@ -11,12 +11,46 @@ body:
       - label: I have searched the existing issues
         required: true
   - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: subtitle
+    attributes:
+      label: Subtitle
+      description: (optional)
+  - type: textarea
+    id: icon
+    attributes:
+      label: Icon
+      description: Please upload the icon to represent the experience
+      placeholder: |
+        Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
+    validations:
+      required: true
+  - type: dropdown
+    id: collaborator
+    attributes:
+      label: Collaborator
+      options:
+        - The Eyeballs Collective
+        - The Dating Privacy Collective
+        
+  - type: input
+    id: dataPortal
     attributes:
       label: 
-      
-   collaborator?: Collaborator
-  databaseConfig?: DatabaseConfig
-  dataModel?: object
+  - type: checkboxes
+    id: localization
+    attributes:
+      label: Internationalization
+      description: Should this experience be internationalized, i.e. translated to other languages than English?
+      options:
+        - label: Yes, this experience should be internationalized
+        
+  
   dataPortal?: string
   dataPortalHtml?: string
   dataPortalMessage?: string
@@ -25,12 +59,9 @@ body:
   files?: Files
   hideFileExplorer?: boolean
   hideSummary?: boolean
-  icon?: string
   keepOnlyFiles?: boolean
   messages?: Messages
   preprocessors?: { [key: string]: PreprocessorFunction }
-  subtitle?: string
-  title: string
   tutorialVideos?: string[]
   url?: string
   viewBlocks: ViewBlock[]
