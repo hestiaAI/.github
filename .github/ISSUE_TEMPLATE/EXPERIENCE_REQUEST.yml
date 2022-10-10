@@ -34,11 +34,12 @@ body:
     id: dataSamples
     attributes:
       label: Data Samples
-      placeholder: |
+      description: |
         Please upload any data samples that should be made available to the experience user.
         These samples are shown in the "Select sample data" dropdown.
         Please note that this data must not be private.
         
+      placeholder: |
         Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
   - type: dropdown
     id: collaborator
