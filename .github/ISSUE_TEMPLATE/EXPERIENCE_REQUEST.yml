@@ -1,0 +1,173 @@
+name: ⚜️ New Experience Request
+description: File a request for a new data experience
+title: "⚜️ [EXPERIENCE_REQUEST]: …"
+labels: ["experience"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: subtitle
+    attributes:
+      label: Subtitle
+      description: (optional)
+  - type: textarea
+    id: icon
+    attributes:
+      label: Icon
+      description: Please upload the icon to represent the experience
+      placeholder: |
+        Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
+    validations:
+      required: true
+  - type: textarea
+    id: dataSamples
+    attributes:
+      label: Data Samples
+      description: |
+        Please upload any data samples that should be made available to the experience user.
+        These samples are shown in the "Select sample data" dropdown.
+        Please note that this data must not be private.
+        
+      placeholder: |
+        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
+  - type: dropdown
+    id: collaborator
+    attributes:
+      label: Collaborator
+      multiple: true
+      options:
+        - The Eyeballs Collective
+        - The Dating Privacy Collective
+  - type: dropdown
+    id: genericViewers
+    attributes:
+      label: Generic Viewers
+      multiple: true
+      options:
+        - Summary
+        - File Explorer
+        - Generic Date Viewer
+        - Generic Location Viewer
+  - type: textarea
+    id: viewBlocks
+    attributes:
+      label: View Blocks / Tabs
+      description: |
+        Please describe as precisely as possible, the view blocks (tabs) that should be part of this experience.
+        The description might include
+          * view block titles
+          * details about visualizations
+          * where existing chart components may be used
+          * SQL queries
+          * pre- or post-processing details
+          * whether to show a table or not
+          * which files/data each block requires
+      placeholder: Enter your description here
+  - type: markdown
+    attributes:
+      value: "## Internationalization"
+  - type: checkboxes
+    attributes:
+      label: Do you want to internationalize the experience?
+      description: Should this experience be internationalized, i.e. translated to other languages than English?
+      options:
+        - label: "Yes"
+  - type: textarea
+    id: messages
+    attributes:
+      label: Translation
+      description: |
+        Insert here translations for the experience to the extent possible, by following the JSON structure for the message file as provided below. 
+        You may either paste the JSON directly or attach a file.
+      placeholder: |
+        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
+        
+  - type: markdown
+    attributes:
+      value: |
+        ### `message.json` structure:
+        ```json
+          {
+            "[lang]": {
+              "intro": {
+                "title": "Title",
+                "subtitle": "Subtitle (optional)",
+                "dataPortal": "https://example.com/[lang]/download-my-data/",
+                "dataPortalHtml": "<div>Alternative to dataPortal. Used to describe how to download the data if no link is available. Useful to explain how to download data from a mobile app. Supports HTML syntax.</div>",
+                "dataPortalMessage": "<div>Additional hints to the user. For example, used to remind the user to download their data in JSON format. Supports HTML syntax.</div>"
+              },
+              "viewBlocks": {
+                "[name]": {
+                  "title": "",
+                  "text": "This map shows what places Google think you visited with the size corresponding to the time you spent in this place:",
+                  "vizProps": {
+                    "[someProp]": "Property passed down to the visualization component (not auto-translated unless specified in the messages field below.)",
+                    "messages": {
+                      "[someMessage]": "Message to pass on to the visualization. Does not support formattable messages, please put those directly under vizProps."
+                    }
+                  },
+                  "headers": {
+                    "[someHeader]": "Table header name"
+                  }
+                }
+              }
+            }
+          }
+        ```
+  - type: markdown
+    attributes:
+      value: |
+        ## Data Portal
+
+        *Please do not complete the following if the experience is to be internationalized and provide this information instead above.*
+  - type: input
+    id: dataPortal
+    attributes:
+      label: Data Portal Link
+      placeholder: Paste here the link to the data portal.
+  - type: textarea
+    id: dataPortalHtml
+    attributes:
+      label: Data Portal Instructions (HTML)
+      description: Alternative to dataPortal. Used to describe how to download the data if no link is available. Useful to explain how to download data from a mobile app.
+      placeholder: Supports HTML syntax.
+      value: |
+        <div>
+          <ul>
+            <li>
+              <p>Open the App and go to "Settings"</p>
+            </li>
+            <li>
+              <p>Select "Privacy"</p>
+            </li>
+            <li>
+              <p>Click "Download My Data"</p>
+            </li>
+          </ul>
+        </div>
+  - type: textarea
+    id: dataPortalMessage
+    attributes:
+      label: Data Portal Message (HTML)
+      description: Additional hints to the user. For example, used to remind the user to download their data in JSON format.
+      placeholder: Supports HTML syntax.
+      value: |
+        <div>
+          Please download your data in <span class="font-weight-bold">JSON format</span>
+        </div>
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?        
+ 
