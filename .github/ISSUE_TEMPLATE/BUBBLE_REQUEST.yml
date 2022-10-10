@@ -1,0 +1,59 @@
+name: 🧆 New Bubble Request
+description: File a request for a new bubble
+title: "🧆 [BUBBLE REQUEST]: …"
+labels: ["bubble", "bubble request"]
+body:
+  - type: textarea
+    attributes:
+      label: |
+        # Setup Requirements for New Bubble
+        ## General Context
+      description: Please write at least two sentences explaining the general context for this request, including why it is needed, who will use it, its business purpose, and other relevant general information that might inform its design and deployment.
+  - type: textarea
+    attributes:
+      label: "## Bizdev Contact Person"
+      description: |
+        Please specify who in Bizdev is making the request.
+        Mention if you are making the request on behalf of some other contact or external client or potential client.
+  - type: textarea
+    attributes:
+      label: "## Deadline / Importance"
+      description: |
+        Please specify any deadline or timeline when this setup must be available by.
+        Note: This deadline is not committed to until the ticket has been reviewed and moved to committed status by dev.
+  
+  - type: input
+    attributes:
+      label: Title
+      description: Specify the bubble title
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Image
+      description: |
+        (optional) An image or an image URL for the bubble.
+        This image is shown in the bubble menu and in the header of the bubble home page.
+        If you do not provide one, the default Hestia bubble icon is used.
+  
+  - type: dropdown
+    attributes:
+      label: Bubble Type
+      options:
+        - Participant
+        - Destination
+    validations:
+      required: true
+      
+  - type: input
+    attributes:
+      label: Destination Bubble(s)
+      description: Specify destination bubble(s) this bubble uploads to
+      placeholder: bubble-1, bubble-2, ...
+      
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?        
+ 
