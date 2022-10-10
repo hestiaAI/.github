@@ -87,10 +87,10 @@ body:
     id: messages
     attributes:
       label: Translation
-      placeholder: |
+      description: |
         Insert here translations for the experience to the extent possible, by following the JSON structure for the message file as provided below. 
         You may either paste the JSON directly or attach a file.
-        
+      placeholder: |
         Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
         
   - type: markdown
