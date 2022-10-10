@@ -30,6 +30,16 @@ body:
         Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
     validations:
       required: true
+  - type: textarea
+    id: dataSamples
+    attributes:
+      label: Data Samples
+      placeholder: |
+        Please upload any data samples that should be made available to the experience user.
+        These samples are shown in the "Select sample data" dropdown.
+        Please note that this data must not be private.
+        
+        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
   - type: dropdown
     id: collaborator
     attributes:
@@ -37,6 +47,30 @@ body:
       options:
         - The Eyeballs Collective
         - The Dating Privacy Collective
+  - type: dropdown
+    id: genericViewers
+    attributes:
+      label: Generic Viewers
+      options:
+        - Summary
+        - File Explorer
+        - Generic Date Viewer
+        - Generic Location Viewer
+  - type: textarea
+    id: viewBlocks
+    attributes:
+      label: View Blocks / Tabs
+      description: |
+        Please describe as precisely as possible, the view blocks (tabs) that should be part of this experience.
+        The description might include
+        * view block titles
+        * details about visualizations
+        * where existing chart components may be used
+        * SQL queries
+        * pre- or post-processing details
+        * whether to show a table or not
+        * which files/data each block requires
+      placeholder: Enter your description here
   - type: markdown
     value: "## Internationalization"
   - type: checkboxes
@@ -130,21 +164,8 @@ body:
         <div>
           Please download your data in <span class="font-weight-bold">JSON format</span>
         </div>
-      
-  
-        
-  
-  dataPortal?: string
-  dataPortalHtml?: string
-  dataPortalMessage?: string
-  dataSamples?: string[]
-  disabled?: boolean
-  files?: Files
-  hideFileExplorer?: boolean
-  hideSummary?: boolean
-  keepOnlyFiles?: boolean
-  messages?: Messages
-  preprocessors?: { [key: string]: PreprocessorFunction }
-  tutorialVideos?: string[]
-  url?: string
-  viewBlocks: ViewBlock[]
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?        
+ 
