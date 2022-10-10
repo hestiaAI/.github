@@ -1,7 +1,7 @@
 name: ⚜️ New Experience Request
 description: File a request for a new data experience
 title: "⚜️ [EXPERIENCE_REQUEST]: …"
-labels: ["experience"]
+labels: ["experience", "experience request"]
 body:
   - type: checkboxes
     attributes:
