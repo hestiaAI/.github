@@ -8,8 +8,8 @@ body:
       label: Is there an existing issue for this?
       description: Please search to see if an issue already exists for the bug you encountered.
       options:
-      - label: I have searched the existing issues
-        required: true
+        - label: I have searched the existing issues
+          required: true
   - type: input
     id: title
     attributes:
@@ -79,7 +79,7 @@ body:
       label: Do you want to internationalize the experience?
       description: Should this experience be internationalized, i.e. translated to other languages than English?
       options:
-        - label: Yes
+        - label: "Yes"
   - type: textarea
     id: messages
     attributes:
