@@ -44,6 +44,7 @@ body:
     id: collaborator
     attributes:
       label: Collaborator
+      multiple: true
       options:
         - The Eyeballs Collective
         - The Dating Privacy Collective
@@ -51,6 +52,7 @@ body:
     id: genericViewers
     attributes:
       label: Generic Viewers
+      multiple: true
       options:
         - Summary
         - File Explorer
