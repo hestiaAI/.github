@@ -3,6 +3,10 @@ description: File a request for a new data experience
 title: "⚜️ [EXPERIENCE REQUEST]: …"
 labels: ["experience", "experience request"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        *Thanks for taking the time to fill out this request form*
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
