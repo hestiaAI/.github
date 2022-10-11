@@ -94,8 +94,10 @@ body:
       description: |
         Insert here translations for the experience to the extent possible, by following the [Messages Specification](https://github.com/hestiaAI/hestialabs-experiences/tree/master/packages/MESSAGES_JSON.md)
         You may either paste the JSON directly or attach a file.
-        Tip: You can attach files by clicking the area below to highlight it and then dragging the files in.
-      value: |
+      placeholder: |
+        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
+        
+        Example:
         {
           "en": {
             "intro": {
