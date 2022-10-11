@@ -1,7 +1,7 @@
 ---
-name: "\U0001F4A1 Feature request"
+name: "\U0001F4A1 Feature Request"
 about: Suggest an idea for this project
-title: "\U0001F4A1 [FEATURE REQUEST] ..."
+title: "\U0001F4A1 [FEATURE REQUEST] …"
 labels: ''
 assignees: ''
 
