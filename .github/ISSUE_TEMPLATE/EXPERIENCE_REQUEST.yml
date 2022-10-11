@@ -164,9 +164,12 @@ body:
     id: dataPortalHtml
     attributes:
       label: Data Portal Instructions (HTML)
-      description: Alternative to dataPortal. Used to describe how to download the data if no link is available. Useful to explain how to download data from a mobile app.
-      placeholder: Supports HTML syntax.
-      value: |
+      description: |
+        Alternative to dataPortal. Used to describe how to download the data if no link is available. Useful to explain how to download data from a mobile app. 
+        **Supports HTML syntax.**
+      placeholder: |
+        Example:
+        
         <div>
           <ul>
             <li>
@@ -184,9 +187,12 @@ body:
     id: dataPortalMessage
     attributes:
       label: Data Portal Message (HTML)
-      description: Additional hints to the user. For example, used to remind the user to download their data in JSON format.
-      placeholder: Supports HTML syntax.
-      value: |
+      description: |
+        Additional hints to the user. For example, used to remind the user to download their data in JSON format.
+        **Supports HTML syntax.**
+      placeholder: |
+        Example:
+        
         <div>
           Please download your data in <span class="font-weight-bold">JSON format</span>
         </div>
