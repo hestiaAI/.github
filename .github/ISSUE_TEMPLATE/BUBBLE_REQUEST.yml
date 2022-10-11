@@ -1,0 +1,233 @@
+name: 🧆 New Bubble Request
+description: File a request for a new bubble
+title: "🧆 [BUBBLE REQUEST]: …"
+labels: ["bubble", "bubble request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Thanks for taking the time to fill out this request form*
+        # Setup Requirements
+  - type: textarea
+    attributes:
+      label: General Context
+      description: |
+        Please write at least two sentences explaining the general context for this request, including why it is needed, who will use it, its business purpose, and other relevant general information that might inform its design and deployment.
+  - type: textarea
+    attributes:
+      label: Bizdev Contact Person
+      description: |
+        Please specify who in Bizdev is making the request.
+        Mention if you are making the request on behalf of some other contact or external client or potential client.
+  - type: textarea
+    attributes:
+      label: Deadline / Importance
+      description: |
+        Please specify any deadline or timeline when this setup must be available by.
+        Note: This deadline is not committed to until the ticket has been reviewed and moved to committed status by dev.
+  
+  - type: input
+    id: title
+    attributes:
+      label: Bubble Title
+    validations:
+      required: true
+      
+  - type: input
+    attributes:
+      label: Bubble ID
+      description: (optional) The ID appears in the URL and is used internally as a unique reference. By default this ID is generated based on the bubble title, but can be overridden here.
+      
+  - type: input
+    id: description
+    attributes:
+      label: Bubble Description
+      description: (optional) Short and concise bubble description. Appears below the title.
+      
+  - type: textarea
+    id: content
+    attributes:
+      label: Additional Content
+      description: (optional) Free-text field where you can provide further information or links. Supports HTML syntax.
+      placeholder: |
+        <a href="http://workshop.com/register">Register here</a>
+  
+  - type: input
+    id: icon
+    attributes:
+      label: Icon URL
+      description: |
+        (optional) URL to an icon image representing the bubble.
+        This icon is shown in the bubble menu and in the header of the bubble home page.
+        If you do not provide one, the default Hestia bubble icon is used.
+  
+  - type: dropdown
+    attributes:
+      label: Bubble Type
+      options:
+        - Participant
+        - Destination
+    validations:
+      required: true
+      
+  - type: input
+    attributes:
+      label: Destination Bubble(s)
+      description: Specify destination bubble(s) this bubble uploads to
+      placeholder: bubble-1, bubble-2, ...
+      
+  - type: textarea
+    id: consent
+    attributes:
+      label: Consent Form
+      description: |
+        Please provide a consent form that follows the [Consent Form Specification](https://github.com/hestiaAI/hestialabs-experiences/blob/6d3942a5b18d11950b8ee43c8f3342f2b3a23087/experiences/config/README.md?plain=1#L81-L156).
+        If this bubble has ultiple destination bubbles, you may optionally provide a consent form for each bubble.
+      placeholder: |
+        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
+        
+        Example:
+        
+        {
+          "default": [
+            {
+              "title": "Introduction",
+              "description": "This is an example consent form."
+            },
+            {
+              "description": "Please input some information.",
+              "type": "input",
+              "name": "e-mail"
+            },
+            {
+              "title": "Radio buttons",
+              "description": "Please select one option.",
+              "type": "radio",
+              "options": ["A", "B"],
+              "value": "A"
+            },
+            {
+              "title": "Checkboxes",
+              "description": "Please select all options that apply.",
+              "type": "checkbox",
+              "options": ["X", "Y", "Z"],
+              "value": ["X"]
+            },
+            {
+              "title": "Which data should be shared ?",
+              "description": "The visualizations of every checked section will be reproducible and the underlying data will be available to the receiver (at least one required).",
+              "type": "data",
+              "required": true
+            },
+            {
+              "title": "Multi-line text area",
+              "type": "multiline",
+              "placeholder": "Please type your comment"
+            }
+          ],
+          "tracker-control": [
+            {
+              "title": "Tracker control export",
+              "description": "This is a special consent form for tracker-control. The data must be included."
+            },
+            {
+              "type": "data",
+              "hide": true,
+              "value": ["trackerControl"],
+              "required": ["trackerControl"]
+            }
+          ],
+          "facebook": null
+        }
+  - type: input
+    id: password
+    attributes:
+      label: Credentials
+      description: |
+        (optional) Please state the means whereby the developer can access the password. 
+        If you are submitting this issue in a private repository, you may enter the password directly in this field at your own discretion. 
+        If not provided, a password will be assigned by the developer.
+  
+  - type: textarea
+    id: publicKey
+    attributes:
+      label: Public Key
+      description: |
+        (optional) If data stored in this bubble is to be encrypted, please provide a public key to be used for encryption. Click the below link to generate a key pair.
+        [Generate Key Pair](https://digipower.academy/import/)
+      placeholder: |
+        Tip: You can attach the public key file by clicking this area to highlight it and then dragging the file in.
+
+  - type: dropdown
+    id: experiences
+    attributes:
+      multiple: true
+      label: Experiences
+      description: Please select the experiences that should be included in the bubble
+      options:
+        - ad-radar
+        - apple-tracker
+        - apple-tracker-agg
+        - explorer
+        - facebook
+        - fitbit
+        - google
+        - google-agg
+        - her
+        - her-tinder-agg
+        - hestialabs
+        - instagram
+        - linkedin
+        - netflix
+        - other
+        - strava
+        - tiktok
+        - tinder
+        - tracker-control
+        - tracker-control-agg
+        - twitter
+        - twitter-agg
+        - uber
+        - uber-driver
+        - youtube
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # Development requirements
+        The above requirements can be satisfied with minimal code - mainly just config. However we recognise that requirements can be more complex. Please provide details of application/functionality-specific requirements using the sections below. All custom requirements will take additional development time.
+        
+  - type: textarea
+    attributes:
+      label: Custom Data Sources
+      description: |
+        For knowing the data source of a bubble, we assume that:
+
+        - All Participant Bubbles allow viewing of local files in browser only and do not access data stored remotely anywhere.
+        - All Destination Bubbles load data from a bubble, which will include data from multiple users.
+
+        If a particular bubble uses a different source than this assumption, (e.g. a participant/destination bubble hybrid, or something that uses some other source such as an external storage API) please specify it here. Similarly if a new type of file is to be supported, detail that here, and provide a sample if possible.
+  - type: textarea
+    attributes:
+      label: Custom Set of Views
+      description: |
+        For deciding what views will be available within the experiences within each bubble, we assume that:
+
+        - The experiences within all Participant Bubbles will not include any aggregate views, only individual tabs for different types of data
+        - The experiences within all Destination Bubbles will include both individual details tabs (e.g. tables/maps) as well as aggregate views
+
+        We further assume that all provided tabs will be the same ones we already have for those companies on existing experiences.
+
+        If you require any new views or different sets of tabs than the standard set, for any of the experiences you listed, for any of the bubbles, please specify the requirements about which tabs/views you want in each bubble, in as much detail as possible, here.
+  - type: textarea
+    attributes:
+      label: Other customisations
+      description: |
+        If there are other special requirements, such as teacher features, analytics, unusual flows, different import requirements or storage requirements, please provide as much detail as possible here. Please note that anything more complex than the standard version as described above will take longer.
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+ 
