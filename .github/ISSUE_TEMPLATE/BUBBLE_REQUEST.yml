@@ -64,7 +64,57 @@ body:
         Please provide a consent form that follows the [Consent Form Specification](https://github.com/hestiaAI/hestialabs-experiences/blob/6d3942a5b18d11950b8ee43c8f3342f2b3a23087/experiences/config/README.md?plain=1#L81-L156).
         If this bubble has ultiple destination bubbles, you may optionally provide a consent form for each bubble.
       placeholder: |
-        {}
+        {
+          "default": [
+            {
+              "title": "Introduction",
+              "description": "This is an example consent form."
+            },
+            {
+              "description": "Please input some information.",
+              "type": "input",
+              "name": "e-mail"
+            },
+            {
+              "title": "Radio buttons",
+              "description": "Please select one option.",
+              "type": "radio",
+              "options": ["A", "B"],
+              "value": "A"
+            },
+            {
+              "title": "Checkboxes",
+              "description": "Please select all options that apply.",
+              "type": "checkbox",
+              "options": ["X", "Y", "Z"],
+              "value": ["X"]
+            },
+            {
+              "title": "Which data should be shared ?",
+              "description": "The visualizations of every checked section will be reproducible and the underlying data will be available to the receiver (at least one required).",
+              "type": "data",
+              "required": true
+            },
+            {
+              "title": "Multi-line text area",
+              "type": "multiline",
+              "placeholder": "Please type your comment"
+            }
+          ],
+          "tracker-control": [
+            {
+              "title": "Tracker control export",
+              "description": "This is a special consent form for tracker-control. The data must be included."
+            },
+            {
+              "type": "data",
+              "hide": true,
+              "value": ["trackerControl"],
+              "required": ["trackerControl"]
+            }
+          ],
+          "facebook": null
+        }
   - type: textarea
     id: anything-else
     attributes:
