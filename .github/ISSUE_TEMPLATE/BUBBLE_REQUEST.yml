@@ -52,7 +52,7 @@ body:
       placeholder: |
         <a href="http://workshop.com/register">Register here</a>
   
-  - type: textarea
+  - type: input
     id: icon
     attributes:
       label: Icon URL
@@ -84,6 +84,8 @@ body:
         Please provide a consent form that follows the [Consent Form Specification](https://github.com/hestiaAI/hestialabs-experiences/blob/6d3942a5b18d11950b8ee43c8f3342f2b3a23087/experiences/config/README.md?plain=1#L81-L156).
         If this bubble has ultiple destination bubbles, you may optionally provide a consent form for each bubble.
       placeholder: |
+        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
+        
         Example:
         
         {
