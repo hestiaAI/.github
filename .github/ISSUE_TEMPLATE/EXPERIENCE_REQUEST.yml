@@ -102,7 +102,7 @@ body:
       value: |
         ## Data Portal
 
-        *Please do not complete the following if the experience is to be internationalized and provide this information instead above.*
+        *Please do not complete the following if the experience is to be internationalized and provide this information instead above in the "Translation" field.*
   - type: input
     id: dataPortal
     attributes:
