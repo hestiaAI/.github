@@ -57,6 +57,15 @@ body:
       placeholder: bubble-1, bubble-2, ...
       
   - type: textarea
+    id: consent
+    attributes:
+      label: Consent Form
+      description: |
+        Please provide a consent form that follows the [Consent Form Specification](https://github.com/hestiaAI/hestialabs-experiences/blob/6d3942a5b18d11950b8ee43c8f3342f2b3a23087/experiences/config/README.md?plain=1#L81-L156).
+        If this bubble has ultiple destination bubbles, you may optionally provide a consent form for each bubble.
+      placeholder: |
+        {}
+  - type: textarea
     id: anything-else
     attributes:
       label: Anything else?        
