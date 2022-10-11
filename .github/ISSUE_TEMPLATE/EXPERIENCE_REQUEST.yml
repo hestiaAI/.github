@@ -94,8 +94,58 @@ body:
       description: |
         Insert here translations for the experience to the extent possible, by following the [Messages Specification](https://github.com/hestiaAI/hestialabs-experiences/tree/master/packages/MESSAGES_JSON.md)
         You may either paste the JSON directly or attach a file.
-      placeholder: |
-        Tip: You can attach files by clicking this area to highlight it and then dragging the files in.
+        Tip: You can attach files by clicking the area below to highlight it and then dragging the files in.
+      value: |
+        {
+          "en": {
+            "intro": {
+              "title": "Title",
+              "subtitle": "Subtitle (optional)",
+              "dataPortal": "https://example.com/en/download-my-data/",
+              "dataPortalHtml": "<div>Alternative to dataPortal. Used to describe how to download the data if no link is available. Useful to explain how to download data from a mobile app. Supports HTML syntax.</div>",
+              "dataPortalMessage": "<div>Additional hints to the user. For example, used to remind the user to download their data in JSON format. Supports HTML syntax.</div>"
+            },
+            "viewBlocks": {
+              "[viewBlockName]": {
+                "title": "View Block Title",
+                "text": "View Block Description",
+                "vizProps": {
+                  "[someProp]": "Property passed down to the visualization component (not auto-translated unless specified in the messages field below.)",
+                  "messages": {
+                    "[someMessage]": "Message to pass on to the visualization. Does not support formattable messages, please put those directly under vizProps."
+                  }
+                },
+                "headers": {
+                  "[someHeader]": "Table header name"
+                }
+              }
+            }
+          },
+          "fr": {
+            "intro": {
+              "title": "Titre",
+              "subtitle": "Sous-titre (facultatif)",
+              "dataPortal": "https://example.com/fr/download-my-data/",
+              "dataPortalHtml": "<div>Alternative à dataPortal. Utilisé pour décrire comment télécharger les données si aucun lien n'est disponible. Utile pour expliquer comment télécharger des données à partir d'une application mobile. Prend en charge la syntaxe HTML.</div>",
+              "dataPortalMessage": "<div>Indications supplémentaires à l'intention de l'utilisateur. Par exemple, utilisé pour rappeler à l'utilisateur de télécharger ses données au format JSON. Supporte la syntaxe HTML.</div>"
+            },
+            "viewBlocks": {
+              "[viewBlockName]": {
+                "title": "Titre du bloc",
+                "text": "Description du bloc",
+                "vizProps": {
+                  "[someProp]": "Propriété transmise au composant de visualisation (non traduite automatiquement sauf si spécifié dans le champ des messages ci-dessous).",
+                  "messages": {
+                    "[someMessage]": "Message à transmettre à la visualisation. Ne supporte pas les messages formatables, veuillez les placer directement sous vizProps."
+                  }
+                },
+                "headers": {
+                  "[someHeader]": "Nom de l'en-tête de la table"
+                }
+              }
+            }
+          }
+        }
         
   - type: markdown
     attributes:
