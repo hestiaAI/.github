@@ -5,7 +5,9 @@ labels: ["bubble", "bubble request"]
 body:
   - type: markdown
     attributes:
-      value: "# Setup Requirements for New Bubble"
+      value: |
+        *Thanks for taking the time to fill out this request form*
+        # Setup Requirements
   - type: textarea
     attributes:
       label: General Context
