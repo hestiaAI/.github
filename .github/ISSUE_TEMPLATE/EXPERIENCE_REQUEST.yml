@@ -17,7 +17,6 @@ body:
     id: title
     attributes:
       label: Title
-    validations:
   - type: input
     id: subtitle
     attributes:
@@ -30,7 +29,6 @@ body:
       description: Please upload the icon to represent the experience
       placeholder: |
         Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
-    validations:
   - type: textarea
     id: dataSamples
     attributes:
