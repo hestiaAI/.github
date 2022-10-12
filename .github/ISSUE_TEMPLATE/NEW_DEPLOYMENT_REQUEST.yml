@@ -1,0 +1,15 @@
+name: 🚀 New Deployment Request
+description: File a request for a new deployment
+title: "🚀 [DEPLOYMENT REQUEST]: …"
+labels: ["production"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Thanks for taking the time to fill out this request form*
+        
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+ 
