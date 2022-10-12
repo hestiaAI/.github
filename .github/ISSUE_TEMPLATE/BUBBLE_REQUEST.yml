@@ -196,6 +196,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        ----
+        
         # Development requirements
         The above requirements can be satisfied with minimal code - mainly just config. However we recognise that requirements can be more complex. Please provide details of application/functionality-specific requirements using the sections below. All custom requirements will take additional development time.
         
