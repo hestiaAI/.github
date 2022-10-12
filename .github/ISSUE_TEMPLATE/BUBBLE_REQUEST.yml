@@ -228,6 +228,12 @@ body:
       label: Other customisations
       description: |
         If there are other special requirements, such as teacher features, analytics, unusual flows, different import requirements or storage requirements, please provide as much detail as possible here. Please note that anything more complex than the standard version as described above will take longer.
+        
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        
   - type: textarea
     id: anything-else
     attributes:
