@@ -4,9 +4,9 @@ contact_links:
     url: https://github.com/hestiaAI/hestialabs-experiences/issues/new?assignees=&labels=bug&template=BUG_REPORT.yml&title=%F0%9F%90%9E+%5BBUG%5D%3A+%E2%80%A6
     about: File a bug report
   - name: 🧆 New Bubble Request
-    url: https://github.com/hestiaAI/hestialabs-experiences/issues/new?assignees=&labels=bubble%2Cbubble+request&template=BUBBLE_REQUEST.yml&title=%F0%9F%A7%86+%5BBUBBLE+REQUEST%5D%3A+%E2%80%A6
+    url: https://github.com/hestiaAI/hestialabs-experiences/issues/new?assignees=&labels=bubble%2Cbubble+request&template=NEW_BUBBLE_REQUEST.yml&title=%F0%9F%A7%86+%5BBUBBLE+REQUEST%5D%3A+%E2%80%A6
     about: File a request for a new bubble
   - name: ⚜️ New Experience Request
-    url: https://github.com/hestiaAI/hestialabs-experiences/issues/new?assignees=&labels=experience%2Cexperience+request&template=EXPERIENCE_REQUEST.yml&title=%E2%9A%9C%EF%B8%8F+%5BEXPERIENCE+REQUEST%5D%3A+%E2%80%A6
+    url: https://github.com/hestiaAI/hestialabs-experiences/issues/new?assignees=&labels=experience%2Cexperience+request&template=NEW_EXPERIENCE_REQUEST.yml&title=%E2%9A%9C%EF%B8%8F+%5BEXPERIENCE+REQUEST%5D%3A+%E2%80%A6
     about: File a request for a new data experience
   
