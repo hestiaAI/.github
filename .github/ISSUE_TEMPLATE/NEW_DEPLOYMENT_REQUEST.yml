@@ -67,12 +67,12 @@ body:
   - type: input
     attributes:
       label: Additional Bubbles 
-      description: Specify additonal bubbles here if you cannot find them in the list above.
+      description: (optional) Specify additonal bubbles here if you cannot find them in the list above.
   
   - type: textarea
     attributes:
       label: Home Page Bubbles 
-      description: Specify which of the above bubbles should be displayed on the home page and not in the menu.
+      description: (optional) Specify which of the above bubbles should be displayed on the home page and not in the menu.
   
   - type: markdown
     attributes:
@@ -118,13 +118,13 @@ body:
   - type: input
     attributes:
       label: Additional Experiences 
-      description: Specify additonal experiences here if you cannot find them in the list above.
+      description: (optional) Specify additonal experiences here if you cannot find them in the list above.
   
   - type: checkboxes
     id: displayCollaborators
     attributes:
-      label: Should collaborator associations with data experiences be displayed?
-      description: 
+      label: Collaborator Associations
+      description: Should collaborator associations with data experiences be visible?
       options:
         - label: "Yes"
   
