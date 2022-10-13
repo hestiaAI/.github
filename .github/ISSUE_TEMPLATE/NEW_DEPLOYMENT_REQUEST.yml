@@ -175,16 +175,14 @@ body:
       placeholder: |
         Example:
         
-        ```json
-          {
-            "primary": "#0C2D48",
-            "secondary": "#2E8BC0",
-            "info": "blue lighten-1",
-            "warning": "yellow darken-3",
-            "error": "deep-orange darken-3",
-            "success": "green accent-3"
-          }
-        ```
+        {
+          "primary": "#0C2D48",
+          "secondary": "#2E8BC0",
+          "info": "blue lighten-1",
+          "warning": "yellow darken-3",
+          "error": "deep-orange darken-3",
+          "success": "green accent-3"
+        }
   
   - type: textarea
     id: appBarLinks
