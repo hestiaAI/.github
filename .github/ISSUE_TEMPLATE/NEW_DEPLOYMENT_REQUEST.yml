@@ -6,8 +6,112 @@ body:
   - type: markdown
     attributes:
       value: |
-        *Thanks for taking the time to fill out this request form*
-        
+        *Thanks for taking the time to fill out this request form.*
+  
+  - type: input
+    attributes:
+      label: Domain Name
+      description: Enter the desired domain name.
+      placeholder: example.hestialabs.org
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: bubbles
+    attributes:
+      multiple: true
+      label: Bubbles
+      description: (optional) Select the bubbles that should be included in the deployment.
+      options:
+        - brown-aggregator
+        - brown-participant
+        - dating-apps-course
+        - demo-aggregator
+        - demo-computation
+        - demo-participant
+        - health-course
+        - live-aggregator
+        - live-participant
+        - matching-algo-course
+        - mercator-aggregator
+        - mercator-participant
+        - observe-aggregator
+        - observe-participant
+        - pdio-aggregator
+        - pdio-participant
+        - policy-making-course
+        - reflets-aggregator
+        - reflets-participant
+        - sciencespo-aggregator
+        - sciencespo-participant
+        - sit-aggregator
+        - sit-participant
+        - swiss-mp-aggregator
+        - swiss-mp-participant
+        - th-aggregator
+        - th-participant
+        - tl-aggregator
+        - tl-participant
+  
+  - type: input
+    attributes:
+      label: Additional Bubbles 
+      description: Specify additonal bubbles here if you cannot find them in the list above.
+  
+  - type: dropdown
+    id: experiences
+    validations:
+      required: true
+    attributes:
+      multiple: true
+      label: Experiences
+      description: Select the experiences that should be included in the deployment.
+      options:
+        - ad-radar
+        - apple-tracker
+        - apple-tracker-agg
+        - explorer
+        - facebook
+        - fitbit
+        - google
+        - google-agg
+        - her
+        - her-tinder-agg
+        - hestialabs
+        - instagram
+        - linkedin
+        - netflix
+        - other
+        - strava
+        - tiktok
+        - tinder
+        - tracker-control
+        - tracker-control-agg
+        - twitter
+        - twitter-agg
+        - uber
+        - uber-driver
+        - youtube
+
+  - type: input
+    attributes:
+      label: Additional Experiences 
+      description: Specify additonal experiences here if you cannot find them in the list above.
+  
+  - type: textarea
+    id: appBarLinks
+    attributes:
+      label: App Bar Links
+      description: |
+        Links to existing pages to display in the app bar (header).
+      
+  
+  - type: input
+    id: hashtags
+    attributes:
+      label: Hashtags
+      description: (optional) Enter a comma-separated list of hashtags (without the "#" symbol) for the social media sharing functionality.
+      
   - type: textarea
     id: anything-else
     attributes:
