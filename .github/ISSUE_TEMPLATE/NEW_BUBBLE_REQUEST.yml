@@ -106,7 +106,7 @@ body:
         - tl-aggregator
         - tl-participant
         
-   type: input
+  - type: input
     attributes:
       label: Additional Destination Bubble(s) 
       description: Specify additonal bubble(s) here if you cannot find them in the list above
