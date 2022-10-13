@@ -70,11 +70,46 @@ body:
     validations:
       required: true
       
-  - type: input
+  - type: dropdown
     attributes:
       label: Destination Bubble(s)
       description: Specify destination bubble(s) this bubble uploads to
-      placeholder: bubble-1, bubble-2, ...
+      multiple: true
+      options:
+        - brown-aggregator
+        - brown-participant
+        - dating-apps-course
+        - demo-aggregator
+        - demo-computation
+        - demo-participant
+        - health-course
+        - live-aggregator
+        - live-participant
+        - matching-algo-course
+        - mercator-aggregator
+        - mercator-participant
+        - observe-aggregator
+        - observe-participant
+        - pdio-aggregator
+        - pdio-participant
+        - policy-making-course
+        - reflets-aggregator
+        - reflets-participant
+        - sciencespo-aggregator
+        - sciencespo-participant
+        - sit-aggregator
+        - sit-participant
+        - swiss-mp-aggregator
+        - swiss-mp-participant
+        - th-aggregator
+        - th-participant
+        - tl-aggregator
+        - tl-participant
+        
+   type: input
+    attributes:
+      label: Additional Destination Bubble(s) 
+      description: Specify additonal bubble(s) here if you cannot find them in the list above
       
   - type: textarea
     id: consent
@@ -140,13 +175,13 @@ body:
           "facebook": null
         }
   - type: input
-    id: password
+    id: codeword
     attributes:
-      label: Credentials
+      label: Codeword
       description: |
-        (optional) Please state the means whereby the developer can access the password. 
-        If you are submitting this issue in a private repository, you may enter the password directly in this field at your own discretion. 
-        If not provided, a password will be assigned by the developer.
+        (optional) Please state the means whereby the developer can access the codeword. 
+        If you are submitting this issue in a private repository, you may enter the codeword directly in this field at your own discretion. 
+        If not provided, a codeword will be assigned by the developer.
   
   - type: textarea
     id: publicKey
@@ -160,6 +195,8 @@ body:
 
   - type: dropdown
     id: experiences
+    validations:
+      required: true
     attributes:
       multiple: true
       label: Experiences
@@ -190,8 +227,7 @@ body:
         - uber
         - uber-driver
         - youtube
-    validations:
-      required: true
+    
 
   - type: markdown
     attributes:
