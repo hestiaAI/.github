@@ -11,11 +11,14 @@ body:
     id: title
     attributes:
       label: Title
+      description: Enter the experience title
+    validations:
+      required: true
   - type: input
     id: subtitle
     attributes:
       label: Subtitle
-      description: (optional)
+      description: (optional) Enter the experience subtitle
   - type: textarea
     id: icon
     attributes:
@@ -23,6 +26,8 @@ body:
       description: Please upload the icon to represent the experience
       placeholder: |
         Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
+    validations:
+      required: true
   - type: textarea
     id: dataSamples
     attributes:
