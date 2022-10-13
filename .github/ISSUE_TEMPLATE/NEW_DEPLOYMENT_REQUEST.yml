@@ -1,0 +1,293 @@
+name: 🚀 New Deployment Request
+description: File a request for a new deployment
+title: "🚀 [DEPLOYMENT REQUEST]: …"
+labels: ["production"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Thanks for taking the time to fill out this request form.*
+  
+  - type: markdown
+    attributes:
+      value: |
+        ----
+  
+  - type: input
+    attributes:
+      label: Domain Name
+      description: Enter the desired domain name.
+      placeholder: example.hestialabs.org
+    validations:
+      required: true
+      
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        # Bubble Configuration
+  
+  - type: dropdown
+    id: bubbles
+    attributes:
+      multiple: true
+      label: Bubbles
+      description: (optional) Select the bubbles that should be included in the deployment.
+      options:
+        - brown-aggregator
+        - brown-participant
+        - dating-apps-course
+        - demo-aggregator
+        - demo-computation
+        - demo-participant
+        - health-course
+        - live-aggregator
+        - live-participant
+        - matching-algo-course
+        - mercator-aggregator
+        - mercator-participant
+        - observe-aggregator
+        - observe-participant
+        - pdio-aggregator
+        - pdio-participant
+        - policy-making-course
+        - reflets-aggregator
+        - reflets-participant
+        - sciencespo-aggregator
+        - sciencespo-participant
+        - sit-aggregator
+        - sit-participant
+        - swiss-mp-aggregator
+        - swiss-mp-participant
+        - th-aggregator
+        - th-participant
+        - tl-aggregator
+        - tl-participant
+  
+  - type: input
+    attributes:
+      label: Additional Bubbles 
+      description: Specify additonal bubbles here if you cannot find them in the list above.
+  
+  - type: textarea
+    attributes:
+      label: Home Page Bubbles 
+      description: Specify which of the above bubbles should be displayed on the home page and not in the menu.
+  
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        # Experience Configuration
+  
+  - type: dropdown
+    id: experiences
+    validations:
+      required: true
+    attributes:
+      multiple: true
+      label: Experiences
+      description: Select the experiences that should be included in the deployment.
+      options:
+        - ad-radar
+        - apple-tracker
+        - apple-tracker-agg
+        - explorer
+        - facebook
+        - fitbit
+        - google
+        - google-agg
+        - her
+        - her-tinder-agg
+        - hestialabs
+        - instagram
+        - linkedin
+        - netflix
+        - other
+        - strava
+        - tiktok
+        - tinder
+        - tracker-control
+        - tracker-control-agg
+        - twitter
+        - twitter-agg
+        - uber
+        - uber-driver
+        - youtube
+
+  - type: input
+    attributes:
+      label: Additional Experiences 
+      description: Specify additonal experiences here if you cannot find them in the list above.
+  
+  - type: checkboxes
+    id: displayCollaborators
+    attributes:
+      label: Should collaborator associations with data experiences be displayed?
+      description: 
+      options:
+        - label: "Yes"
+  
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        # Miscallaneous Configuration
+  
+  - type: input
+    id: hashtags
+    attributes:
+      label: Hashtags
+      description: (optional) Enter a comma-separated list of hashtags (without the "#" symbol) for the social media sharing functionality.
+  
+  - type: input
+    id: logo
+    attributes:
+      label: Site Logo
+      description: (optional) Path or URL to override the default site logo
+      placeholder: |
+        "/some-other-logo.png" or "https://example.com/logo.png"
+    
+  - type: input
+    id: mapboxToken
+    attributes:
+      label: Mapbox Token (⚠️)
+      description: |
+        (optional) Alternative Mapbox Token
+        ATTENTION: Do not paste the URL directly here but instead a password-protected link to a text file containing the token. Alternatively, you may inform the assigned developer discretely.
+  
+  - type: input
+    id: homePath
+    attributes:
+      label: Home Path
+      description: |
+        (optional) Alternative Home Path or URL. Overrides the link to the home page.
+      placeholder: |
+        "/index.html" or "https://example.com/data-experiences"
+  
+  - type: textarea
+    id: theme
+    attributes:
+      label: Theme
+      description: |
+        (optional) Override default theme colors
+        You may specify colors in hex code or with keywords from the [Material color palette](https://vuetifyjs.com/en/styles/colors/#material-colors)
+      placeholder: |
+        Example:
+        
+        ```json
+          {
+            "primary": "#0C2D48",
+            "secondary": "#2E8BC0",
+            "info": "blue lighten-1",
+            "warning": "yellow darken-3",
+            "error": "deep-orange darken-3",
+            "success": "green accent-3"
+          }
+        ```
+  
+  - type: textarea
+    id: appBarLinks
+    attributes:
+      label: App Bar Links
+      description: |
+        (optional) Links to existing pages to display in the app bar (header).
+        
+        JSON Schema:
+        ```json
+          {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "external": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "url",
+                "name"
+              ]
+            }
+          }
+        ```
+      placeholder: |
+        Example:
+        
+        [
+          {
+            "url": "https://hestia.ai/en/#contact",
+            "name": "Contact us",
+            "external": true
+          },
+          {
+            "url": "/about",
+            "name": "About"
+          },
+          {
+            "url": "/privacy",
+            "name": "Privacy"
+          }
+        ]
+  
+  - type: input
+    id: filedrop
+    attributes:
+      label: File-drop Service Link
+      description: |
+        (optional) Link to a file-drop service.
+        Displayed at the end of the consent form and invites the user to upload their downloaded data.
+      placeholder: "https://drive.infomaniak.com/filedrop"
+  
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        # Internationalization
+ 
+  - type: checkboxes
+    id: i18nLocales
+    attributes:
+      label: Available Languages
+      description: |
+        (optional) Select the languages to support.
+        **All languages** are included by default.
+      options:
+        - label: English (en)
+        - label: français (fr)
+        
+  - type: dropdown
+    id: i18nLocale
+    attributes:
+      label: Default Language
+      description: |
+        (optional) Select the app’s default language.
+        This is set to **English (en)** by default.
+      options:
+        - English (en)
+        - français (fr)
+        
+  - type: input
+    id: i18nUrl
+    attributes:
+      label: Custom Translations
+      description: |
+        (optional) URL to fetch external custom translations
+      placeholder: "https://example.com/messages.json"
+        
+  - type: markdown
+    attributes:
+      value: |
+        ----
+  
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+ 
