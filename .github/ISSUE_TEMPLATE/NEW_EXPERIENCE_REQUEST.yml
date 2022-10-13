@@ -23,7 +23,7 @@ body:
     id: icon
     attributes:
       label: Icon
-      description: Please upload the icon to represent the experience
+      description: Upload the icon to associate with the experience
       placeholder: |
         Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
     validations:
@@ -33,7 +33,7 @@ body:
     attributes:
       label: Data Samples
       description: |
-        Please upload any data samples that should be made available to the experience user.
+        Upload any data samples that should be made available to the experience user.
         These samples are shown in the "Select sample data" dropdown.
         Please note that this data must not be private.
         
@@ -62,7 +62,7 @@ body:
     attributes:
       label: View Blocks / Tabs
       description: |
-        Please describe as precisely as possible, the view blocks (tabs) that should be part of this experience.
+        Describe as precisely as possible, the view blocks (tabs) that should be part of this experience.
         The description might include
           * view block titles
           * details about visualizations
