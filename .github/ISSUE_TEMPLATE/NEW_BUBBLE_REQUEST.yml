@@ -177,10 +177,10 @@ body:
   - type: input
     id: codeword
     attributes:
-      label: Codeword
+      label: Codeword (⚠️)
       description: |
         (optional) State the means whereby the developer can access the codeword. 
-        If you are submitting this issue in a private repository, you may enter the codeword directly in this field at your own discretion. 
+        You may enter the codeword directly in this field at your own discretion. 
         If not provided, a codeword will be assigned by the developer.
   
   - type: textarea
