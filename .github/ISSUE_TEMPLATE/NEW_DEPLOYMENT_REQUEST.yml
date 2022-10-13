@@ -258,7 +258,6 @@ body:
       description: |
         (optional) Select the languages to support.
         **All languages** are included by default.
-      multiple: true
       options:
         - label: English (en)
         - label: français (fr)
