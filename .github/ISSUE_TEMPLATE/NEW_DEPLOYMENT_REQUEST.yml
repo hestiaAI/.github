@@ -98,20 +98,70 @@ body:
       label: Additional Experiences 
       description: Specify additonal experiences here if you cannot find them in the list above.
   
-  - type: textarea
-    id: appBarLinks
-    attributes:
-      label: App Bar Links
-      description: |
-        Links to existing pages to display in the app bar (header).
-      
-  
   - type: input
     id: hashtags
     attributes:
       label: Hashtags
       description: (optional) Enter a comma-separated list of hashtags (without the "#" symbol) for the social media sharing functionality.
-      
+  
+  - type: checkboxes
+    id: displayCollaborators
+    attributes:
+      label: Should collaborator associations with data experiences be displayed?
+      description: 
+      options:
+        - label: "Yes"
+  
+  - type: textarea
+    id: appBarLinks
+    attributes:
+      label: App Bar Links
+      description: |
+        (optional) Links to existing pages to display in the app bar (header).
+        
+        JSON Schema:
+        ```json
+          {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "external": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "url",
+                "name"
+              ]
+            }
+          }
+        ```
+      placeholder: |
+        Example:
+        
+        [
+          {
+            "url": "https://hestia.ai/en/#contact",
+            "name": "Contact us",
+            "external": true
+          },
+          {
+            "url": "/about",
+            "name": "About"
+          },
+          {
+            "url": "/privacy",
+            "name": "Privacy"
+          }
+        ]
+  
   - type: textarea
     id: anything-else
     attributes:
