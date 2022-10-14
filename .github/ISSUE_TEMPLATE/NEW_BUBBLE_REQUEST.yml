@@ -164,7 +164,7 @@ body:
   - type: input
     id: codeword
     attributes:
-      label: Codeword (⚠️)
+      label: ⚠️ Codeword
       description: |
         (optional) State the means whereby the developer can access the codeword. 
         You may enter the codeword directly in this field at your own discretion. 
