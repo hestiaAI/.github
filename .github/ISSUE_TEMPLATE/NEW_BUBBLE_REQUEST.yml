@@ -1,7 +1,7 @@
 name: 🧆 New Bubble Request
 description: File a request for a new bubble
 title: "🧆 [BUBBLE REQUEST]: …"
-labels: ["bubble", "bubble request"]
+labels: ["bubble"]
 body:
   - type: markdown
     attributes:
