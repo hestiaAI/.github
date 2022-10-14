@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **⚠️ Beware! This issue will be posted in a public repository**
+        **⚠️ Beware! This issue will be posted in a public repository.**
         <br>
         *Thanks for taking the time to fill out this request form.*
   - type: markdown
@@ -145,7 +145,7 @@ body:
     id: logo
     attributes:
       label: Site Logo
-      description: (optional) Path or URL to override the default site logo
+      description: (optional) Path or URL to override the default site logo.
       placeholder: |
         "/some-other-logo.png" or "https://example.com/logo.png"
     
@@ -171,8 +171,8 @@ body:
     attributes:
       label: Theme
       description: |
-        (optional) Override default theme colors
-        You may specify colors in hex code or with keywords from the [Material color palette](https://vuetifyjs.com/en/styles/colors/#material-colors)
+        (optional) Override default theme colors.
+        You may specify colors in hex code or with keywords from the [Material color palette](https://vuetifyjs.com/en/styles/colors/#material-colors).
       placeholder: |
         Example:
         
@@ -277,7 +277,7 @@ body:
     attributes:
       label: Custom Translations
       description: |
-        (optional) URL to fetch external custom translations
+        (optional) URL to fetch external custom translations.
       placeholder: "https://example.com/messages.json"
         
   - type: markdown
