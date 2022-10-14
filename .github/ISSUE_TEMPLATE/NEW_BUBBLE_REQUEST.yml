@@ -10,6 +10,7 @@ body:
         <br>
         *Thanks for taking the time to fill out this request form.*
         <br>
+        ----
         # Setup Requirements
   - type: textarea
     attributes:
