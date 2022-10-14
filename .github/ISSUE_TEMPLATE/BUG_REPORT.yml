@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **⚠️ Beware! This issue will be posted in a public repository**
+        **⚠️ Beware! This issue will be posted in a public repository.**
         <br>
         *Thanks for taking the time to fill out this bug report.*
   - type: checkboxes
@@ -14,7 +14,7 @@ body:
       label: Is there an existing issue for this?
       description: Please search to see if an issue already exists for the bug you encountered.
       options:
-      - label: I have searched the existing issues
+      - label: I have searched the existing issues.
         required: true
   - type: textarea
     id: what-happened
@@ -34,7 +34,7 @@ body:
     id: images
     attributes:
       label: Images
-      description: Please share relevant images or screenshots here
+      description: Share relevant images or screenshots here.
       placeholder: |
         Tip: You can attach images by clicking this area to highlight it and then dragging files in.
   - type: textarea
@@ -87,7 +87,7 @@ body:
     attributes:
       label: Browser
       description: What browsers are you seeing the problem on?
-      placeholder: Please specify the name and version
+      placeholder: Please specify the name and version.
     validations:
       required: true
   - type: dropdown
