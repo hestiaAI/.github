@@ -9,6 +9,7 @@ body:
         **⚠️ Beware! This issue will be posted in a public repository.**
         <br>
         *Thanks for taking the time to fill out this bug report.*
+        ----
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
@@ -16,6 +17,10 @@ body:
       options:
       - label: I have searched the existing issues.
         required: true
+  - type: markdown
+    attributes:
+      value: |
+        ----
   - type: textarea
     id: what-happened
     attributes:
