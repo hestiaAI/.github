@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         *Thanks for taking the time to fill out this request form.*
-  
+        **⚠️ Beware! Your issue will be posted in a public repository**
   - type: markdown
     attributes:
       value: |
