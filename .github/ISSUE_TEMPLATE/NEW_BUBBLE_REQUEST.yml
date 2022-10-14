@@ -81,34 +81,17 @@ body:
       multiple: true
       options:
         - brown-aggregator
-        - brown-participant
-        - dating-apps-course
         - demo-aggregator
-        - demo-computation
-        - demo-participant
-        - health-course
         - live-aggregator
-        - live-participant
-        - matching-algo-course
         - mercator-aggregator
-        - mercator-participant
         - observe-aggregator
-        - observe-participant
         - pdio-aggregator
-        - pdio-participant
-        - policy-making-course
         - reflets-aggregator
-        - reflets-participant
         - sciencespo-aggregator
-        - sciencespo-participant
         - sit-aggregator
-        - sit-participant
         - swiss-mp-aggregator
-        - swiss-mp-participant
         - th-aggregator
-        - th-participant
         - tl-aggregator
-        - tl-participant
         
   - type: input
     attributes:
