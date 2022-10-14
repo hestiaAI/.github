@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        **⚠️ Beware! This issue will be posted in a public repository**
+        <br>
+        *Thanks for taking the time to fill out this bug report.*
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
