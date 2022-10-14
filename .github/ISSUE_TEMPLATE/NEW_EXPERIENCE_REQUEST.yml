@@ -1,12 +1,16 @@
 name: 🎁 New Experience Request
 description: File a request for a new data experience
 title: "🎁 [EXPERIENCE REQUEST]: …"
-labels: ["experience", "experience request"]
+labels: ["experience"]
 body:
   - type: markdown
     attributes:
       value: |
-        *Thanks for taking the time to fill out this request form*
+        **⚠️ Beware! This issue will be posted in a public repository**
+        <br>
+        *Thanks for taking the time to fill out this request form.*
+        
+        ----
   - type: input
     id: title
     attributes:
