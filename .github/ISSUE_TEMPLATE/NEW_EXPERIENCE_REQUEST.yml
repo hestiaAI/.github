@@ -28,7 +28,7 @@ body:
     id: icon
     attributes:
       label: Icon
-      description: Upload the icon to associate with the experience
+      description: Upload the icon to associate with the experience.
       placeholder: |
         Tip: You can attach an image by clicking this area to highlight it and then dragging the file in.
     validations:
@@ -194,7 +194,7 @@ body:
         Example:
         
         <div>
-          Please download your data in <span class="font-weight-bold">JSON format</span>
+          Please download your data in <span class="font-weight-bold">JSON format</span>.
         </div>
   - type: textarea
     id: anything-else
