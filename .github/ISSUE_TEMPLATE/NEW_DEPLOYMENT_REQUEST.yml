@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        *Thanks for taking the time to fill out this request form.*
+        **⚠️ Beware! This issue will be posted in a public repository**
         <br>
-        **⚠️ Beware! Your issue will be posted in a public repository**
+        *Thanks for taking the time to fill out this request form.*
   - type: markdown
     attributes:
       value: |
