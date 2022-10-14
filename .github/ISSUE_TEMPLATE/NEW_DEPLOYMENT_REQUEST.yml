@@ -152,7 +152,7 @@ body:
   - type: input
     id: mapboxToken
     attributes:
-      label: Mapbox Token (⚠️)
+      label: ⚠️ Mapbox Token
       description: |
         (optional) Alternative Mapbox Token
         ATTENTION: Do not paste the URL directly here but instead a password-protected link to a text file containing the token. Alternatively, you may inform the assigned developer discretely.
