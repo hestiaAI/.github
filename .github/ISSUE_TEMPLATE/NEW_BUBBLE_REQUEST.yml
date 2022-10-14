@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **⚠️ Beware! This issue will be posted in a public repository**
+        **⚠️ Beware! This issue will be posted in a public repository.**
         <br>
         *Thanks for taking the time to fill out this request form.*
        
@@ -77,7 +77,7 @@ body:
   - type: dropdown
     attributes:
       label: Destination Bubble(s)
-      description: Specify destination bubble(s) this bubble uploads to
+      description: Specify destination bubble(s) this bubble uploads to.
       multiple: true
       options:
         - brown-aggregator
@@ -113,7 +113,7 @@ body:
   - type: input
     attributes:
       label: Additional Destination Bubble(s) 
-      description: Specify additonal bubble(s) here if you cannot find them in the list above
+      description: Specify additonal bubble(s) here if you cannot find them in the list above.
       
   - type: textarea
     id: consent
@@ -192,7 +192,8 @@ body:
     attributes:
       label: Public Key
       description: |
-        (optional) If data stored in this bubble is to be encrypted, please provide a public key to be used for encryption. Click the below link to generate a key pair.
+        (optional) If data stored in this bubble is to be encrypted, please provide a public key to be used for encryption.
+        Click the below link to generate a key pair.
         [Generate Key Pair](https://digipower.academy/import/)
       placeholder: |
         Tip: You can attach the public key file by clicking this area to highlight it and then dragging the file in.
@@ -204,7 +205,7 @@ body:
     attributes:
       multiple: true
       label: Experiences
-      description: Select the experiences that should be included in the bubble
+      description: Select the experiences that should be included in the bubble.
       options:
         - ad-radar
         - apple-tracker
