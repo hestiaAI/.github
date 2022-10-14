@@ -11,6 +11,20 @@ body:
         *Thanks for taking the time to fill out this request form.*
         
         ----
+        # Data
+  
+  - type: input
+    attributes:
+      label: ⚠️ Data for Development
+      description: |
+        Paste a password-protected link to relevant data samples for development. Alternatively, share this link discretely with the assigned developer.
+        
+  - type: markdown
+    attributes:
+      value: |
+        ----
+        # Specifications
+        
   - type: input
     id: title
     attributes:
