@@ -6,22 +6,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        **⚠️ Beware! This issue will be posted in a public repository.**
-        <br>
-        
-        *Thanks for taking the time to fill out this bug report.*
-        
-        ----
-  - type: checkboxes
-    attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
-      options:
-      - label: I have searched the existing issues.
-        required: true
-  - type: markdown
-    attributes:
-      value: |
         ----
   - type: textarea
     id: what-happened
@@ -54,8 +38,6 @@ body:
         2. Click on…
         3. Scroll down to…
         4. Error message appears
-    validations:
-      required: true
   - type: textarea
     id: data
     attributes:
@@ -66,61 +48,3 @@ body:
         Can this bug be reproduced independent of the data source?
         Please do not upload any data files to this form. 
         If the data is not confidential, please share the files with the issue assignee(s) or provide a password-protected link in this field.
-  - type: dropdown
-    id: site
-    attributes:
-      label: Web Sites
-      description: On which site(s) did you observe the problem?
-      multiple: true
-      options:
-        - localhost (master branch)
-        - digipower.academy
-        - test.hestialabs.org
-        - experiences.hestialabs.org
-        - dating-privacy.hestialabs.org
-        - showcase.hestialabs.org
-        - eyeballs.hestialabs.org
-        - hestialabs.org
-        - hestia.ai
-        - digipower.hestialabs.org
-        - deployment-example-experiences.netlify.app
-        - tfac.hestialabs.org
-        - digipower-investigation.org
-        - other
-    validations:
-      required: true
-  - type: textarea
-    id: browsers
-    attributes:
-      label: Browser
-      description: What browsers are you seeing the problem on?
-      placeholder: Please specify the name and version.
-    validations:
-      required: true
-  - type: dropdown
-    id: operating-systems
-    attributes:
-      label: Operating System
-      description: On which operating system(s) did you observe the problem?
-      multiple: true
-      options:
-        - Windows
-        - macOS
-        - Linux
-        - iOS
-        - Android
-  - type: textarea
-    id: logs
-    attributes:
-      label: Log Output and Error Messages
-      description: Please copy and paste any relevant log output and/or error messages. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: textarea
-    id: anything-else
-    attributes:
-      label: Anything else?
-      description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
-
-      placeholder: |
-        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
