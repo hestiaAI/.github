@@ -29,11 +29,4 @@ body:
         label: Alternatives Considered
         description: If you've thought about alternative approaches or workarounds, please mention them here.
 
-    - type: markdown
-        attributes:
-          value: |
-            ---
-            
-            By submitting this feature request, I acknowledge that this is a suggestion and not a guaranteed roadmap item. The project team will evaluate the idea and provide feedback.
-            
-            Note: Ensure you follow the project's contribution guidelines and code of conduct when creating and commenting on this issue.
+    
